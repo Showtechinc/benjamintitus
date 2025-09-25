@@ -1,0 +1,52 @@
+.services {
+  margin-bottom: 29px;
+}
+.services p {
+  margin: 0px 0px 25px 0px;
+}
+.list_of_services1 {
+  display: flex;
+  margin: 50px 0px 30px 0px;
+  gap: 50px;
+}
+.service_con {
+  display: flex;
+  margin: 0px 0px 50px 0px;
+  gap: 15px;
+}
+.list_of_services1 i {
+  font-size: 3rem;
+  color: var(--lighter-blue);
+}
+.service_info h4 {
+  font-size: 1.2rem;
+  margin: 13px 0px 0px 0px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0px 0px 0px 0px;
+}
+.service_con p {
+  margin: 2px 0px 0px 0px;
+}
+.why_choose_us h3 {
+  font-size: 1.3rem;
+  margin: 0px 0px 7px 0px;
+  color: var(--headers-color);
+}
+@media (max-width: 767px) {
+  .list_of_services1 {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .service_con {
+    margin: 0px 0px 35px 0px;
+  }
+  .list_of_services1 i {
+    font-size: 2.6rem;
+  }
+  .service_info h4 {
+    white-space: normal;
+    margin: 8px 0px 0px 0px;
+  }
+}

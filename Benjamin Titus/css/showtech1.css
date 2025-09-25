@@ -1,0 +1,128 @@
+/* ** DARKMODE INPUTS** */
+:root {
+  --base-color: #ddd8d8;
+  --base-background: #01011d;
+  --base-shadow: #01011d;
+  --base-drop: #f5f7f7;
+  --dark-mode: #01011d;
+  --black-text: #e6dddd;
+  --light-text: #ebe8e8;
+  --ash-background: #22282e;
+  --active-color: #0f5779;
+  --lighter-blue: #0994d4;
+  --headers-color: #fcfeff;
+  --dark-black: black;
+  --border: 1px solid #0994d4;
+}
+
+/* (((((((( This is the lightmode of this site it is disabled for now, but when enabled, the class name of the lightmode here(.body-dark) will be the name of the root colors and the lightmode colors will be the root colors.)))))))) */
+/* .body-dark{
+  --base-color: white;
+  --base-background: white;
+  --base-shadow: #f5f7f7;
+  --base-drop: white;
+  --dark-mode: #01011d;
+  --black-text: black;
+  --light-text: #1b1b1b;
+  --ash-background: #22282e;
+  --active-color: #0f5779;
+  --lighter-blue: #0994d4;
+  --headers-color: #0e0e5c;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: system-ui, "Open Sans";
+  color: var(--light-text);
+  background-color: var(--base-background);
+}
+
+.body-fix {
+  overflow: hidden;
+}
+
+.main_body {
+  margin-left: 295px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Trebuchet MS";
+}
+
+body p {
+  line-height: 25px;
+}
+
+/*** NAVIGATION BAR ***/
+.Nav_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 265px;
+  z-index: 9997;
+  padding: 15px;
+  background-color: var(--dark-mode);
+  border-right: var(--border);
+  transition: 0.3s ease-in;
+  overflow-y: auto;
+  color: white;
+}
+
+.img1 img {
+  display: block;
+  width: 120px;
+  border: 8px solid #22282e;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.Header_name h1 {
+  font-size: 1.5rem;
+  font-weight: 700px;
+  margin: 0px 0px 13px 0px;
+  text-align: center;
+  color: white;
+}
+
+.SocialHandles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0px 0px 25px 0px;
+}
+
+.fa-x-twitter,
+.fa-facebook-f,
+.fa-instagram,
+.fa-whatsapp,
+.fa-linkedin-in {
+  cursor: pointer;
+  width: 18px;
+  padding: 8px;
+  color: #ffff;
+  font-size: 1rem;
+  background-color: #22282e;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.fa-x-twitter:hover,
+.fa-facebook-f:hover,
+.fa-instagram:hover,
+.fa-whatsapp:hover,
+.fa-linkedin-in:hover {
+  background-color: var(--active-color);
+}

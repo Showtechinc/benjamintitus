@@ -1,0 +1,167 @@
+ .portfolio {
+   background-color: var(--base-shadow);
+   margin: 0px 0px 50px 0px;
+   padding: 30px 0px 70px 25px;
+ }
+
+ .portfolio p {
+   margin: 0px 0px 25px 0px;
+ }
+
+ .projects_nav ul {
+   display: flex;
+   justify-content: center;
+   text-transform: uppercase;
+   font-family: "Trebuchet MS";
+   cursor: pointer;
+   font-weight: 500;
+   background-color: var(--base-drop);
+   color: var(--dark-black);
+   border-radius: 20px;
+   padding: 10px 15px 8px 15px;
+   width: 200px;
+   margin: 0px auto;
+   list-style: none;
+   gap: 20px;
+ }
+
+ .projects_nav li:hover {
+   color: var(--lighter-blue);
+   transition: all 0.1s ease-in;
+ }
+
+ .All_projects_con {
+   margin: 30px 25px 0px 0px;
+ }
+
+ .ty {
+   display: flex;
+ }
+
+ .proj_con {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+ }
+
+ .proj_con img {
+   height: 36vh;
+   width: 23vw;
+ }
+
+ .info_links {
+   opacity: 0;
+   background-color: #317ac4b3;
+   position: relative;
+   text-align: center;
+   bottom: 34px;
+   height: 5vh;
+   transition: 0.5s ease;
+ }
+
+ .info_links .fa-solid {
+   font-size: 1.1rem;
+   color: #ffffff;
+   /* border: 2px solid red; */
+   height: 3.6vh;
+   width: 100%;
+   text-align: center;
+   padding-top: 7px;
+ }
+
+ .proj_con .hover-port:hover img,
+ .design:hover img,
+ .web:hover img {
+   opacity: 0.5;
+   transition: 0.7s ease;
+ }
+
+ .Aimg:hover+.info_links {
+   opacity: 1;
+ }
+
+ .info_links i:hover {
+   background-color: #1d6ab6b3;
+   cursor: pointer;
+   transition: 0.7s ease;
+ }
+
+ .info_links:hover {
+   opacity: 1;
+ }
+
+ .app {
+   opacity: 0;
+   display: none;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .design {
+   opacity: 0;
+   display: none;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .web {
+   opacity: 0;
+   display: none;
+   transition: all 0.3s ease-in-out;
+ }
+
+ .add-app {
+   opacity: 1;
+   display: block;
+ }
+
+ .add-design {
+   opacity: 1;
+   display: block;
+ }
+
+ .add-web {
+   opacity: 1;
+   display: block;
+ }
+
+ @media (max-width: 1250px) {
+   .portfolio {
+     padding: 30px 10px 70px 40px;
+   }
+
+   .proj_con img {
+     height: 37vh;
+     width: 29vw;
+   }
+ }
+
+ @media (max-width: 990px) {
+   .portfolio {
+     padding: 30px 35px 70px 35px;
+   }
+
+   .proj_con img {
+     height: 30vh;
+     width: 28vw;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .portfolio {
+     padding: 20px 5px 70px 26px;
+   }
+
+   .proj_con {
+     display: block;
+   }
+
+   .proj_con img {
+     height: auto;
+     width: 100%;
+   }
+ }
+
+ @media (max-width: 450px) {
+   .info_links {
+     bottom: 44px;
+   }
+ }
