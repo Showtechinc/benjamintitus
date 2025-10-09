@@ -78,6 +78,7 @@ iframe {
   width: 100%;
 }
 
+/* (((( Contact Form )))) */
 .contact_right {
   position: relative;
   background-color: var(--base-shadow);
@@ -94,7 +95,6 @@ iframe {
 
 .contact_right input,
 .contact_right textarea {
-  position: absolute;
   font-size: 1rem;
   padding: 10px;
   outline: none;
@@ -102,6 +102,7 @@ iframe {
   border: 1px solid #c9cfcf;
   border-radius: 0px 10px;
   resize: none;
+  margin-bottom: 25px;
   z-index: 1111;
 }
 
@@ -112,43 +113,12 @@ iframe {
   position: relative;
   font-family: sans-serif;
   color: var(--light-text);
-  height: 4.5vh;
   width: 100%;
+  height: 20px;
 }
 
 .input-message textarea {
   height: 26vh;
-}
-
-.name-move p,
-.email-move p,
-.subject-move p,
-.message-move p {
-  font-size: 1rem;
-  position: relative;
-  padding: 0px 7px;
-  bottom: 40px;
-  left: 10px;
-  margin-bottom: 10px;
-  transition: 0.5s ease;
-  background-color: var(--base-shadow);
-}
-
-.name-move p {
-  width: 110px;
-}
-
-.email-move p {
-  width: 75px;
-}
-
-.subject-move p {
-  width: 53px;
-}
-
-.message-move p {
-  bottom: 180px;
-  width: 63px;
 }
 
 .contact_right input:focus,
@@ -156,22 +126,6 @@ iframe {
 .contact_right textarea:focus,
 .contact_right textarea:valid {
   border: 1px solid #64a4c2;
-}
-
-.input-name input:focus+.name-move p,
-.input-name input:valid+.name-move p,
-.input-email input:focus+.email-move p,
-.input-email input:valid+.email-move p,
-.input-subject input:focus+.subject-move p,
-.input-subject input:valid+.subject-move p {
-  transform: translate(-2px, -25px) scale(1);
-  z-index: 1111;
-}
-
-.input-message textarea:focus+.message-move p,
-.input-message textarea:valid+.message-move p {
-  transform: translate(-1px, -17px) scale(1);
-  z-index: 1111;
 }
 
 .send-button {
@@ -184,11 +138,13 @@ iframe {
   font-family: system-ui, "Open Sans";
   font-weight: normal;
   padding: 12px 20px;
+  margin-top: 12px;
   color: #f5f7f7;
   font-size: 1.1rem;
   background-color: var(--lighter-blue);
   border: 0px;
   border-radius: 5px 5px;
+
 }
 
 .send-button button:hover {
@@ -206,7 +162,7 @@ iframe {
   bottom: 0;
   width: 265px;
   z-index: 9999;
-  margin-bottom: 3px;
+  margin-bottom: 17px;
 }
 
 .cr_bold {
@@ -294,45 +250,18 @@ iframe {
     /* border: 2px solid red; */
   }
 
+  .input-name input,
+  .input-email input,
+  .input-subject input,
+  .input-message textarea {
+    height: 30px;
+  }
+
   .input-message textarea {
     height: 12vh;
   }
 
-  .name-move p,
-  .email-move p,
-  .subject-move p,
-  .message-move p {
-    bottom: 40px;
-    margin-bottom: -7px;
-    /* border: 2px solid red; */
-  }
-
-  .email-move p {
-    width: 74px;
-    white-space: nowrap;
-  }
-
-  .message-move p {
-    bottom: 81px;
-  }
-
-  .input-name input:focus+.name-move p,
-  .input-name input:valid+.name-move p,
-  .input-email input:focus+.email-move p,
-  .input-email input:valid+.email-move p,
-  .input-subject input:focus+.subject-move p,
-  .input-subject input:valid+.subject-move p {
-    transform: translate(-2px, -30px) scale(1);
-    z-index: 1111;
-  }
-
-  .input-message textarea:focus+.message-move p,
-  .input-message textarea:valid+.message-move p {
-    transform: translate(-1px, -49px) scale(1);
-    z-index: 1111;
-  }
-
   .send-button {
-    top: 8px;
+    margin-top: 2px;
   }
 }

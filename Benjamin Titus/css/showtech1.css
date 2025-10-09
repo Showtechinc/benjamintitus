@@ -74,10 +74,12 @@ body p {
   z-index: 9997;
   padding: 15px;
   background-color: var(--dark-mode);
-  border-right: var(--border);
+  /* border-right: var(--border); */
   transition: 0.3s ease-in;
   overflow-y: auto;
   color: white;
+  box-shadow: 0 4px 24px 9px #0f58792a,
+      0 4px 10px 0 rgba(0, 0, 0, 0);
 }
 
 .img1 img {

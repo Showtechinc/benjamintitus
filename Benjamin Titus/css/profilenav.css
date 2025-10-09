@@ -1,46 +1,34 @@
 /*** Navigation Buttons Section ***/
 .Nav_buttons ul {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   font-size: 1rem;
-  margin-top: 33px;
+  margin-top: 30px;
+  font-weight: 700px;
+  gap: 25px;
 }
+
 .Nav_buttons a {
   text-decoration: none;
   display: flex;
-  margin: 0px 0px 30px 17px;
+  margin: 0px 0px 0px 17px;
   width: 90px;
   cursor: pointer;
+  color: #6c757d;
+  gap: 10px;
 }
+
 .Nav_buttons i {
   font-size: 1.2rem;
   color: #6c757d;
-}
-.Nav_buttons li {
-  font-size: 1rem;
-  font-weight: 700px;
-}
-.home_a {
-  margin: 1px 0px 0px 5px;
-  color: #6c757d;
-}
-.about_a {
-  margin: 1px 0px 0px 9px;
-  color: #6c757d;
-}
-.resume_a {
-  margin: 0px 0px 0px 10px;
-  color: #6c757d;
-}
-.portfolio_a,
-.services_a,
-.contact_a {
-  margin: -1.5px 0px 0px 9px;
-  color: #6c757d;
+  margin-top: 1px;
 }
 
 .Nav_buttons a:hover i {
   color: var(--active-color);
 }
+
 .Nav_buttons a:hover li,
 a:focus li {
   color: #a8a9b4;
@@ -75,6 +63,7 @@ a:focus li {
 .nav-button {
   display: none;
 }
+
 .close-button {
   display: none;
 }
@@ -83,12 +72,14 @@ a:focus li {
   .main_body {
     margin-left: 0px;
   }
+
   .nav-mobile {
     display: block;
     overflow: hidden;
     opacity: 0;
     width: 0vw;
   }
+
   .mobile-navcon {
     display: flex;
     position: fixed;
@@ -98,6 +89,7 @@ a:focus li {
     font-size: 25px;
     color: white;
   }
+
   .nav-button {
     cursor: pointer;
     background-color: #0994d4;
@@ -106,9 +98,11 @@ a:focus li {
     transition: 0.5s ease-in;
     font-size: 23px;
   }
+
   .toggle-nav {
     display: block;
   }
+
   .close-button {
     cursor: pointer;
     background-color: #0994d4;
@@ -116,25 +110,20 @@ a:focus li {
     border-radius: 20px;
     transition: 0.5s ease-in;
   }
-  .footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0px;
-    background-color: #01011d;
-  }
 }
+
 @media screen and (max-width: 990px) {
   .mobile-navcon {
     left: 93%;
   }
 }
+
 @media screen and (max-width: 767px) {
   .mobile-navcon {
     left: 90%;
   }
 }
+
 @media screen and (max-width: 450px) {
   .mobile-navcon {
     left: 86%;
